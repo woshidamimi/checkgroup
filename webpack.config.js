@@ -5,13 +5,16 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const now = Date.now();
 
 module.exports = {
-    entry: ['./src/main.js'],
+    entry: ['./src/comp.js'],
     output: {
         path: path.join(__dirname, './dist'),
-        filename: 'dist.[hash].js'  ,
+        filename: 'dist.js'  ,
+       
+        libraryTarget: 'umd', 
+      
     },
     resolve: {
-        extensions: ['.vue', ' ']
+        extensions: ['.vue', '.js']
     },
   
     module: {

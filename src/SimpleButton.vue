@@ -16,7 +16,7 @@ export default {
 </script>
 <style lang="css">
 .btn{
-    background: skyblue;
+    background: orange;
     width: 200px;
     height: 40px;
     color: #fafafa;

@@ -5,7 +5,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const now = Date.now();
 
 module.exports = {
-    entry: ['./src/comp.js'],
+    entry: ['./src/main.js'],
     output: {
         path: path.join(__dirname, './dist'),
         filename: 'dist.js'  ,
@@ -14,9 +14,15 @@ module.exports = {
       
     },
     resolve: {
+        alias:{
+            '@': path.join(__dirname, './src')
+        },
         extensions: ['.vue', '.js']
     },
-  
+    externals: {
+        'Vue': "vue",
+        'ElementUI': 'ELEMENTUI'
+    },
     module: {
         rules: [
             {
@@ -30,6 +36,16 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.(svg|eot|ttf|woff|woff2)$/,
+                use: [{
+                    loader: 'url-loader',
+                    options: {
+                        esModule: false,
+                        name: './[name].[hash:8].[ext]'
+                    }
+                }]
             }
         ]
     },

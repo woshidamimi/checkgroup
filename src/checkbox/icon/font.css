@@ -1,0 +1,27 @@
+@font-face {
+    font-family: mi-icon;
+    src: url("mi-icon.eot");src: url("mi-icon.eot?fc24ff35#iefix") format("embedded-opentype"),
+             url("mi-icon.woff2?fc24ff35") format("woff2"),
+             url("mi-icon.woff?fc24ff35") format("woff"),
+             url("mi-icon.ttf?fc24ff35") format("truetype"),
+             url("mi-icon.svg?fc24ff35#mi-icon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="mi-icon"], [class*=" mi-icon"] {
+    font-family: 'mi-icon' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+}
+
+
+.mi-icon-sami-select::before {
+    content: "\ea01";
+}
+
+.mi-icon-seleted::before {
+    content: "\ea02";
+}
+

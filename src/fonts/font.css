@@ -1,0 +1,28 @@
+@font-face {
+    font-family: hg-cion;
+    src: url("hg-cion.eot");src: url("hg-cion.eot?09faa849#iefix") format("embedded-opentype"),
+             url("hg-cion.woff2?09faa849") format("woff2"),
+             url("hg-cion.woff?09faa849") format("woff"),
+             url("hg-cion.ttf?09faa849") format("truetype"),
+             url("hg-cion.svg?09faa849#hg-cion") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="hg-icon"], [class*=" hg-icon"] {
+    font-family: 'hg-cion' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    display: block;
+}
+
+
+.hg-icon-sami-select::before {
+    content: "\ea01";
+}
+
+.hg-icon-seleted::before {
+    content: "\ea02";
+}
+

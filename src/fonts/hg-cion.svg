@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="hg-cion" horiz-adv-x="1000">
+    <font-face font-family="hg-cion"
+      units-per-em="1000" ascent="1000"
+      descent="0" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="sami-select"
+      unicode="&#xEA01;"
+      horiz-adv-x="1000" d="M791.6666669921875 531.25V468.75H208.3333330078125V531.25z" />
+    <glyph glyph-name="seleted"
+      unicode="&#xEA02;"
+      horiz-adv-x="1000" d="M230.4687504882813 538.1458330078125L186.3020834960938 493.8958330078125L391.4687504882812 289.2916669921875L813.6979165039063 706.9583330078126L769.7395834960937 751.3750000000001L391.6562504882813 377.3750000000001z" />
+  </font>
+</defs>
+</svg>
